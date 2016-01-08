@@ -1,0 +1,141 @@
+@import './styles/normalize.css';
+@import './styles/proxima_nova.css';
+@import './styles/variables';
+
+$font: 'proxima-nova';
+html, body{
+  -webkit-font-smoothing: subpixel-antialiased;
+  height: 100%;
+  font-family: $font, ".SFNSText-Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  line-height: 1;
+  height: 100%;
+  position: relative;
+  color: #282828;
+  font-size: 15px;
+}
+
+body, .navbar, .music-player{
+  min-width: 834px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+p{
+  margin: 0;
+}
+
+i{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.no-user-select{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.noscroll{
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.disabled{
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  opacity: .3;
+  color: rgba(0,0,0,.6);
+  -webkit-backface-visibility: hidden;
+}
+
+.link{
+  cursor: pointer;
+}
+
+.clearfix:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.aa{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hidden{
+  display: none;
+}
+textarea{
+  display: block;
+  width: 90%;
+  padding: 10px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  line-height: 1.1;
+    &:focus{
+      outline: none;
+    }
+}
+
+input{
+  &:focus{
+    outline: none;
+  }
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
+}
+
+*[contenteditable=true]{
+  &:focus{
+    outline: none;
+  }
+}
+[contenteditable]:empty:before {
+    content: attr(placeholder);
+    color: rgb(130,130,130);
+}
+.app{
+  min-height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  z-index: 9990;
+}
+
+.content{
+  height: 100%;
+}
+
+.page-header{
+  padding-top: 70px;
+  padding-bottom: 5px;
+  background: rgb(23, 23, 23);
+  color: $white;
+  h1{
+    text-align: left;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+}
+
+.page-header-inner{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}

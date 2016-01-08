@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("//s3.amazonaws.com/thedropclubproduction/production/assets/Gotham-Book-fc6369b7ae556cff1b9bbbb2e14e2700.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("//s3.amazonaws.com/thedropclubproduction/production/assets/Gotham-Medium-c8f24e8a8c50e133fd7b6a85bdcca55e.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GothamLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("www.carolinaherrera.com/chny-confidential/fonts/GothamLight.woff2") format("woff2");
+}

@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "meteor": true,
+    "es6": true
+  },
+  // To give you an idea how to override rule options:
+  "rules": {
+    "indent": [2, 2, {"VariableDeclarator": { "var": 2, "let": 2, "const": 3}}],
+    "quotes": [2, "single", "avoid-escape"],
+    "jsx-quotes": [2, "prefer-double"],
+    "no-unused-vars": [2, {"args": "none"}],
+    "space-before-blocks": 2,
+
+    "strict": [2, "never"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  }
+}

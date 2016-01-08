@@ -1,0 +1,6 @@
+@define-mixin placeholder {
+  &.placeholder { @mixin-content; }
+  &:-moz-placeholder { @mixin-content; }
+  &::-moz-placeholder { @mixin-content; }
+  &::-webkit-input-placeholder { @mixin-content; }
+}
